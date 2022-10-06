@@ -14,6 +14,29 @@ hidden2(); // returns 1
 
 
 ***********************************************************************/
+// let hiddenCounter =(() => {
+//   let count = 0
+
+//   function add(){
+//     count++
+//   }
+//   function value(){
+//     return count
+//   }
+//   return {
+//     add,
+//     value
+//   }
+
+// })
+
+// let hidden1 = hiddenCounter(); //returns a function
+// hidden1.add(); // returns 1
+// hidden1.add(); // returns 2
+
+// let hidden2 = hiddenCounter(); // returns a function
+// hidden2.add(); // returns
+
 
 // Your code here
 
