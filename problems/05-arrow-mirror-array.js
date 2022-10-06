@@ -11,6 +11,26 @@ arrowMirrorArray(['a', 'b', 'c', 'd']); // => [ 'a', 'b', 'c', 'd', 'd', 'c', 'b
 ***********************************************************************/
 
 // Your code here
+// let arrowMirrorArray = (array) => {
+//   let mirrored = [];
+  
+//   for (let i =0; i < array.length; i++) {
+//     let el = array[i];
+//     mirrored.push(el)
+//   }
+//   return mirrored
+// }
+
+let arrowMirrorArray = (array) => {
+  let mirrored = array;
+  let mirror = [];
+
+  for (let i = array.length -1; i >= 0; i--) {
+    let el = array[i];
+    mirror.push(el)
+  }
+  return mirrored.concat(mirror)
+}
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 

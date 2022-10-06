@@ -18,7 +18,6 @@ const arrowRestSum = (...num) => {
     let el = num[i];
     restSum += el
   }
-
   return restSum
 }
 
