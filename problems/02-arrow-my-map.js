@@ -19,6 +19,20 @@ console.log(result2);   // [ 'RUN!', 'FORREST!' ]
 ***********************************************************************/
 
 // Your code here
+// friends.forEach(printObj)
+
+// function printObj(obj){
+//   let name = obj.name
+//   let years = obj.yearsOfFriendship
+  
+//   console.log(`${name}: ${years} years`)
+// }
+
+array.forEach(arrowMyMap)
+
+const arrowMyMap = (array, cb) => {
+  let arr = [];
+}
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 
