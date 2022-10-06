@@ -21,7 +21,17 @@ AFTER YOU ARE FINISHED WITH THIS PROBLEM, ASK FOR A CODE REVIEW
 - Explain, but don't code, how you would turn your solution into a one-line
   fat-arrow function
 ***********************************************************************/
+ let lazyAdder = (firstNum) => {
+    let sum = firstNum
 
+    return function (secondNum) {
+      sum += secondNum
+      return function (thirdNum) {
+        sum += thirdNum
+        return sum
+      }
+    }
+ }
 // Your code here
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
