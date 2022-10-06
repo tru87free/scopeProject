@@ -19,11 +19,10 @@ sandwich2("pb") // => "One sandwich with tomato and pb"
 let sandwichMaker = () => {
   let order = "One sandwich with tomato"
 
-  let sentence = function(fillings){
-   order = order + " and " + fillings
-  return order;
-  }
-  return sentence;
+    return function(fillings){
+      order += " and " + fillings
+      return order;
+    }
   }
 // Your code here
 
