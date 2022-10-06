@@ -16,7 +16,15 @@ let sandwich2 = sandwichMaker(); // => returns a function
 sandwich2("pb") // => "One sandwich with tomato and pb"
 
 ***********************************************************************/
+let sandwichMaker = () => {
+  let order = "One sandwich with tomato"
 
+  let sentence = function(fillings){
+   order = order + " and " + fillings
+  return order;
+  }
+  return sentence;
+  }
 // Your code here
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
